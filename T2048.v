@@ -82,7 +82,7 @@ Fixpoint iter {A : Type} n (f : A -> A) a  :=
   match n with O => a | S n1 => f (iter n1 f a) end.
 
 (* Make Empty board *)
-Fixpoint make_board n :=
+Definition make_board n :=
   let l := iter n (cons 0) nil in iter n (cons l) nil.
  
 (* Apply a test on a list *)

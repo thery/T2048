@@ -20,7 +20,7 @@ env:
   - NJOBS=3
   - COMPILER="4.08.1"
   matrix:
-  - COQ_VER="8.11.0" REPO_NAME="coq-released"  REPO_URL="http://coq.inria.fr/opam/released"
+  - COQ_VER="8.12.0" REPO_NAME="coq-released"  REPO_URL="http://coq.inria.fr/opam/released"
 
 install:
 - export OPAMROOT=$HOME/.opam
@@ -28,7 +28,7 @@ install:
 - eval $(opam config env)
 - opam repo add coq-core-dev https://coq.inria.fr/opam/core-dev || echo "coq-core-dev registered"
 - opam repo add "${REPO_NAME}" "${REPO_URL}" || echo "${REPO_NAME} registered"
-- opam install coq.${COQ_VER} -y
+- travis_wait opam install coq.${COQ_VER} -y
 - opam pin add -y -n T2048 .
 - opam install -y -vvv --deps-only T2048
 
