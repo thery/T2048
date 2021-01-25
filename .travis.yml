@@ -18,9 +18,9 @@ addons:
 env:
   global:
   - NJOBS=3
-  - COMPILER="4.08.1"
+  - COMPILER="4.11.1"
   matrix:
-  - COQ_VER="8.12.0" REPO_NAME="coq-released"  REPO_URL="http://coq.inria.fr/opam/released"
+  - COQ_VER="8.13.0" REPO_NAME="coq-released"  REPO_URL="http://coq.inria.fr/opam/released"
 
 install:
 - export OPAMROOT=$HOME/.opam
