@@ -22,7 +22,7 @@ a version of the 2048 game for Coq
 - Author(s):
   - Laurent Théry
 - License: [MIT License](LICENSE)
-- Compatible Coq versions: 8.17 or later
+- Compatible Coq versions: 8.18 or later
 - Additional dependencies: none
 - Coq namespace: `T2048`
 - Related publication(s): none
