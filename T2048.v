@@ -1,4 +1,4 @@
-Require Import Ascii String List EqNat NArith.
+From Stdlib Require Import Ascii String List EqNat NArith.
 
 Open Scope string_scope.
 Open Scope N_scope.

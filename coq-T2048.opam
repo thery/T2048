@@ -10,22 +10,22 @@ dev-repo: "git+https://github.com/thery/T2048.git"
 bug-reports: "https://github.com/thery/T2048/issues"
 license: "MIT"
 
-synopsis: "A version of the 2048 game for Coq"
+synopsis: "A version of the 2048 game for Rocq"
 description: """
 # T2048
-a version of the 2048 game for Coq
+a version of the 2048 game for Rocq
 
 ![2048](./2048.png)"""
 
 build: [make "-j%{jobs}%"]
 install: [make "install"]
 depends: [
-  "coq" {(>= "8.18")}
+  "coq" 
 ]
 
 tags: [
   "keyword:T2048"
-  "keyword:coq puzzle T2048"
+  "keyword:rocq puzzle T2048"
   "logpath:T2048"
 ]
 authors: [

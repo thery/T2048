@@ -6,14 +6,14 @@ Follow the instructions on https://github.com/coq-community/templates to regener
 
 [![Docker CI][docker-action-shield]][docker-action-link]
 
-[docker-action-shield]: https://github.com/thery/T2048/workflows/Docker%20CI/badge.svg?branch=master
-[docker-action-link]: https://github.com/thery/T2048/actions?query=workflow:"Docker%20CI"
+[docker-action-shield]: https://github.com/thery/T2048/actions/workflows/docker-action.yml/badge.svg?branch=master
+[docker-action-link]: https://github.com/thery/T2048/actions/workflows/docker-action.yml
 
 
 
 
 # T2048
-a version of the 2048 game for Coq
+a version of the 2048 game for Rocq
 
 ![2048](./2048.png)
 
@@ -22,9 +22,8 @@ a version of the 2048 game for Coq
 - Author(s):
   - Laurent Théry
 - License: [MIT License](LICENSE)
-- Compatible Coq versions: 8.18 or later
 - Additional dependencies: none
-- Coq namespace: `T2048`
+- Rocq/Coq namespace: `T2048`
 - Related publication(s): none
 
 ## Building and installation instructions
