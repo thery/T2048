@@ -28,11 +28,15 @@ a version of the 2048 game for Rocq
 
 ## Building and installation instructions
 
-To build and install manually, do:
+To build and install manually, you need to make sure that all the
+libraries this development depends on are installed.  The easiest way to do that
+is still to rely on opam:
 
 ``` shell
 git clone https://github.com/thery/T2048.git
 cd T2048
+opam repo add rocq-released https://rocq-prover.org/opam/released
+opam install --deps-only .
 make   # or make -j <number-of-cores-on-your-machine> 
 make install
 ```
